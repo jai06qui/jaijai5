@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>FlavorTaste — Services</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="C:\Users\User\Desktop\multiplePage\css folder\style.css">
+
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="logo"><span class="mark">JB</span>FlavorTaste</div>
+    <nav>
+      <a href="home.html">Home</a>
+      <a href="Recipes.html">Recipes</a>
+      <a href="services.html">Services</a>
+      <a href="subscribe.html">Subscribe</a>
+      <a href="about-contact.html" class="active">A-Contact</a>
+      </nav>
+         <div class="header-icons">
+    <span title="Home" id="searchIcon" onclick="window.location.href='home.html'">🔍</span>
+    <span title="account" onclick="window.location.href='LR.html'">👤</span>
+      </div>
+       
+             <div class="social-header" aria-hidden="false">
+        <a href="https://github.com/jai06qui" class="icon-btn" aria-label="GitHub" target="_blank" rel="noopener"><i class="fab fa-github"></i></a>
+        <a href="https://www.facebook.com/jhai.995312 " class="icon-btn" aria-label="Facebook" target="_blank" rel="noopener"><i class="fab fa-facebook"></i></a>
+        <a href="https://www.instagram.com/_jhai06_zin?igsh=Z2V3dzRsZ3ZvZnlk" class="icon-btn" aria-label="Instagram" target="_blank" rel="noopener"><i class="fab fa-instagram"></i></a>
+        <a href="#" class="icon-btn" aria-label="X (Twitter)" target="_blank" rel="noopener"><i class="fab fa-x-twitter"></i></a>
+        <a href="https://youtube.com/@thatfoodiegirll?si=cftQmsUVO0oHatXj" class="icon-btn" aria-label="youtube" target="_blank" rel="noopener"><i class="fab fa-youtube"></i></a>
+      </div>
+       
+    </div>
+    </div>
+  </header>
+
+  <main style="padding:48px 0 40px">
+    <div class="container">
+      <header style="text-align:center;margin-bottom:20px">
+        <h1 style="font-size:34px;margin:0">Our Services</h1>
+        <p style="color:var(--muted);margin-top:10px">Everything you need for your culinary journey</p>
+      </header>
+
+      <!-- Services grid -->
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="icon">📅</div>
+          <h3>Meal Plans</h3>
+          <p>Customized weekly meal plans tailored to your dietary preferences and goals.</p>
+          <div class="service-list">
+            <ul>
+              <li>Personalized nutrition plans</li>
+              <li>Shopping lists included</li>
+              <li>Flexible scheduling</li>
+              <li>Family-friendly options</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="service-card">
+          <div class="icon" style="background:rgba(30,180,100,0.06);color:#1eb464">⬆️</div>
+          <h3>Recipe Submission</h3>
+          <p>Share your favorite recipes with our community and get featured.</p>
+          <div class="service-list">
+            <ul>
+              <li>Easy submission process</li>
+              <li>Get credit for your recipes</li>
+              <li>Community feedback</li>
+              <li>Featured recipe opportunities</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="service-card">
+          <div class="icon">⭐</div>
+          <h3>Premium Content</h3>
+          <p>Unlock exclusive recipes, cooking classes, and chef tips.</p>
+          <div class="service-list">
+            <ul>
+              <li>Video cooking tutorials</li>
+              <li>Advanced techniques</li>
+              <li>Chef-exclusive recipes</li>
+              <li>Priority support</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Submit recipe form -->
+      <section style="margin-top:34px">
+        <div class="card">
+          <h2 style="margin-top:4px">Submit Your Recipe</h2>
+          <p style="color:var(--muted);margin-top:8px">Share your culinary creations with the FlavorHub community</p>
+
+          <form id="submitRecipe" style="margin-top:14px">
+            <div class="form-row">
+              <label for="rtitle">Recipe Title *</label>
+              <input id="rtitle" type="text" placeholder="e.g., Grandma's Apple Pie" required>
+            </div>
+
+            <div class="form-row">
+              <label for="ingredients">Ingredients *</label>
+              <textarea id="ingredients" placeholder="List ingredients, one per line..." required></textarea>
+            </div>
+
+            <div class="form-row">
+              <label for="steps">Preparation Steps *</label>
+              <textarea id="steps" placeholder="Describe the cooking steps..." required></textarea>
+            </div>
+
+            <div class="form-row">
+              <label>Recipe Image (Optional)</label>
+              <div class="file-input">
+                <input id="recipeImage" type="file" accept="image/*">
+                <span id="fileName" class="kv">No file chosen</span>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <button class="btn" type="submit">Submit Recipe</button>
+            </div>
+          </form>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer-container container">
+      <div class="footer-brand">
+        <h2>FlavorTaste</h2>
+        <p>Your destination for delicious recipes and culinary inspiration.</p>
+      </div>
+
+      <div class="footer-links">
+        <h3>Quick Links</h3>
+        <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="Recipes.html">Recipes</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="subscribe.html">Subscribe</a></li>
+        <li><a href="about-contact.html">A-Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-account">
+        <h3>Account</h3>
+        <ul>
+          <li><a href="LR.html">Login</a></li>
+          <li><a href="LR.html">Register</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-connect">
+        <h3>Connect</h3>
+        <a href="https://github.com/jai06qui">GitHub</a>
+      </div>
+    </div>
+
+    <div class="footer-bottom container">
+      <p>© 2025 FlavorTaste. All rights reserved. | GitHub</p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script>
+    // show filename on file input
+    const rImage = document.getElementById('recipeImage');
+    const fileName = document.getElementById('fileName');
+    rImage.addEventListener('change', () => {
+      const f = rImage.files[0];
+      fileName.textContent = f ? f.name : 'No file chosen';
+    });
+
+    document.getElementById('submitRecipe').addEventListener('submit', (e) => {
+      e.preventDefault();
+      alert('Recipe submitted (mock). In a real site you would send data to the server.');
+      e.target.reset();
+      fileName.textContent = 'No file chosen';
+    });
+  </script>
+</body>
+</html>

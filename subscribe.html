@@ -1,0 +1,226 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>FlavorTaste — Subscribe</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="C:\Users\User\Desktop\multiplePage\css folder\style.css">
+  
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="logo"><span class="mark">JB</span>FlavorTaste</div>
+    <nav>
+      <a href="home.html">Home</a>
+      <a href="Recipes.html">Recipes</a>
+      <a href="services.html">Services</a>
+      <a href="subscribe.html">Subscribe</a>
+      <a href="about-contact.html" class="active">A-Contact</a>
+      </nav>
+         <div class="header-icons">
+    <span title="Home" id="searchIcon" onclick="window.location.href='home.html'">🔍</span>
+    <span title="account" onclick="window.location.href='LR.html'">👤</span>
+      </div>
+       
+             <div class="social-header" aria-hidden="false">
+        <a href="https://github.com/jai06qui" class="icon-btn" aria-label="GitHub" target="_blank" rel="noopener"><i class="fab fa-github"></i></a>
+        <a href="https://www.facebook.com/jhai.995312 " class="icon-btn" aria-label="Facebook" target="_blank" rel="noopener"><i class="fab fa-facebook"></i></a>
+        <a href="https://www.instagram.com/_jhai06_zin?igsh=Z2V3dzRsZ3ZvZnlk" class="icon-btn" aria-label="Instagram" target="_blank" rel="noopener"><i class="fab fa-instagram"></i></a>
+        <a href="#" class="icon-btn" aria-label="X (Twitter)" target="_blank" rel="noopener"><i class="fab fa-x-twitter"></i></a>
+        <a href="https://youtube.com/@thatfoodiegirll?si=cftQmsUVO0oHatXj" class="icon-btn" aria-label="youtube" target="_blank" rel="noopener"><i class="fab fa-youtube"></i></a>
+      </div>
+       
+    </div>
+    </div>
+  </header>
+
+  <main style="padding:48px 0 40px">
+    <div class="container">
+      <header style="text-align:center;margin-bottom:18px">
+        <h1 style="font-size:34px;margin:0">Choose Your Plan</h1>
+        <p style="color:var(--muted);margin-top:8px">Unlock premium features and take your cooking to the next level</p>
+      </header>
+
+      <div class="pricing-grid">
+        <div class="price-card" data-price="9.99" data-plan="Basic">
+          <div class="icon">👑</div>
+          <h4>Basic</h4>
+          <div class="price-amount">$9.99/month</div>
+          <div class="price-features">
+            <ul>
+              <li>Access to all recipes</li>
+              <li>Weekly meal plans</li>
+              <li>Shopping lists</li>
+              <li>Community support</li>
+            </ul>
+          </div>
+          <div style="margin-top:12px">
+            <button class="btn select-plan">Choose Basic</button>
+          </div>
+        </div>
+
+        <div class="price-card popular" data-price="19.99" data-plan="Pro">
+          <div class="icon">👑</div>
+          <h4>Pro</h4>
+          <div class="price-amount">$19.99/month</div>
+          <div class="price-features">
+            <ul>
+              <li>Everything in Basic</li>
+              <li>Video tutorials</li>
+              <li>Chef-exclusive recipes</li>
+              <li>Priority support</li>
+            </ul>
+          </div>
+          <div style="margin-top:12px">
+            <button class="btn select-plan">Choose Pro</button>
+          </div>
+        </div>
+
+        <div class="price-card" data-price="29.99" data-plan="Premium">
+          <div class="icon">👑</div>
+          <h4>Premium</h4>
+          <div class="price-amount">$29.99/month</div>
+          <div class="price-features">
+            <ul>
+              <li>Everything in Pro</li>
+              <li>Live cooking classes</li>
+              <li>1-on-1 chef consultations</li>
+              <li>Ad-free experience</li>
+            </ul>
+          </div>
+          <div style="margin-top:12px">
+            <button class="btn select-plan">Choose Premium</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Checkout form -->
+      <section style="margin-top:28px">
+        <div class="card">
+          <h2>Complete Your Purchase</h2>
+          <p style="color:var(--muted);margin-top:6px">Enter your details to subscribe to the selected plan</p>
+          <form id="checkoutForm" style="margin-top:16px">
+            <div class="form-row">
+              <label>Full Name *</label>
+              <input id="fullName" type="text" placeholder="jai quibay" required>
+            </div>
+
+            <div class="row" style="margin-bottom:14px">
+              <div style="flex:1">
+                <label>Email Address *</label>
+                <input id="emailAddr" type="email" placeholder="jai@example.com" required>
+              </div>
+              <div style="flex:1">
+                <label>Billing Address *</label>
+                <input id="billing" type="text" placeholder="123 Main St, City, ZIP" required>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <label>Card Number *</label>
+              <input id="cardnum" type="text" placeholder="1234 5678 9012 3456" required>
+            </div>
+
+            <div class="row" style="margin-bottom:14px">
+              <div style="flex:1">
+                <label>Expiry Date *</label>
+                <input id="exp" type="text" placeholder="MM/YY" required>
+              </div>
+              <div style="flex:1">
+                <label>CVV *</label>
+                <input id="cvv" type="text" placeholder="123" required>
+              </div>
+            </div>
+
+            <div class="row" style="align-items:center;margin-top:8px">
+              <div style="flex:1">
+                <strong>Total:</strong>
+              </div>
+              <div style="font-size:18px;color:var(--accent);font-weight:700" id="totalAmount">$19.99/month</div>
+            </div>
+
+            <div style="margin-top:14px">
+              <button class="btn" type="submit">Complete Purchase</button>
+            </div>
+            <p style="color:var(--muted);font-size:13px;margin-top:8px">This is a mock checkout. No real payment will be processed.</p>
+          </form>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer-container container">
+      <div class="footer-brand">
+        <h2>FlavorTaste</h2>
+        <p>Your destination for delicious recipes and culinary inspiration.</p>
+      </div>
+
+      <div class="footer-links">
+        <h3>Quick Links</h3>
+        <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="Recipes.html">Recipes</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="subscribe.html">Subscribe</a></li>
+        <li><a href="about-contact.html">A-Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-account">
+        <h3>Account</h3>
+        <ul>
+          <li><a href="LR.html">Login</a></li>
+          <li><a href="LR.html">Register</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-connect">
+        <h3>Connect</h3>
+        <a href="https://github.com/jai06qui">GitHub</a>
+      </div>
+    </div>
+
+    <div class="footer-bottom container">
+      <p>© 2025 FlavorTaste. All rights reserved. | GitHub</p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script>
+    // Plan selection & update total
+    const planButtons = document.querySelectorAll('.select-plan');
+    const priceCards = document.querySelectorAll('.price-card');
+    const totalAmount = document.getElementById('totalAmount');
+    let selectedPrice = 19.99; // default Pro
+
+    function selectCard(card){
+  priceCards.forEach(c => c.classList.remove('popular', 'chosen'));
+  card.classList.add('popular', 'chosen');
+  selectedPrice = parseFloat(card.dataset.price);
+  totalAmount.textContent = "$${selectedPrice.toFixed(2)}/month";
+}
+
+    // initialize: highlight the Pro card
+    const initCard = document.querySelector('.price-card[data-plan="Pro"]');
+    if(initCard) initCard.classList.add('popular');
+
+    planButtons.forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        const card = e.target.closest('.price-card');
+        selectCard(card);
+        window.scrollTo({top: document.querySelector('#checkoutForm').offsetTop - 20, behavior:'smooth'});
+      });
+    });
+
+    document.getElementById('checkoutForm').addEventListener('submit', (e) => {
+      e.preventDefault();
+      alert("Mock purchase: ${selectedPrice.toFixed(2)}/month — implement server-side to process payments.");
+    });
+  </script>
+</body>
+</html>

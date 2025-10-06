@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FlavorTaste - Discover Delicious Recipes</title>
+  <link rel="stylesheet" href="C:\Users\User\Desktop\multiplePage\css folder\style.css">
+
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="logo"><span class="mark">JB</span>FlavorTaste</div>
+    <nav>
+      <a href="home.html">Home</a>
+      <a href="Recipes.html">Recipes</a>
+      <a href="services.html">Services</a>
+      <a href="subscribe.html">Subscribe</a>
+      <a href="about-contact.html" class="active">A-Contact</a>
+      </nav>
+         <div class="header-icons">
+    <span title="Home" id="searchIcon" onclick="window.location.href='home.html'">🔍</span>
+    <span title="account" onclick="window.location.href='LR.html'">👤</span>
+      </div>
+       
+             <div class="social-header" aria-hidden="false">
+        <a href="https://github.com/jai06qui" class="icon-btn" aria-label="GitHub" target="_blank" rel="noopener"><i class="fab fa-github"></i></a>
+        <a href="https://www.facebook.com/jhai.995312 " class="icon-btn" aria-label="Facebook" target="_blank" rel="noopener"><i class="fab fa-facebook"></i></a>
+        <a href="https://www.instagram.com/_jhai06_zin?igsh=Z2V3dzRsZ3ZvZnlk" class="icon-btn" aria-label="Instagram" target="_blank" rel="noopener"><i class="fab fa-instagram"></i></a>
+        <a href="#" class="icon-btn" aria-label="X (Twitter)" target="_blank" rel="noopener"><i class="fab fa-x-twitter"></i></a>
+        <a href="https://youtube.com/@thatfoodiegirll?si=cftQmsUVO0oHatXj" class="icon-btn" aria-label="youtube" target="_blank" rel="noopener"><i class="fab fa-youtube"></i></a>
+      </div>
+       
+    </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <h1>Discover Delicious <span>Recipes</span></h1>
+    <p>Your culinary journey starts here with thousands of chef-approved recipes</p>
+    <div class="search-box">
+      <input type="text" id="searchInput" placeholder="Search recipes...">
+      <button id="searchBtn">Search</button>
+    </div>
+  </section>
+
+  <!-- Back Button -->
+  <div class="back-container">
+    <a href="home.html" class="back-btn">⬅ Back to Home</a>
+  </div>
+
+  <!-- Recipes -->
+  <section class="recipes">
+    <h2>Featured Recipes</h2>
+    <p>"Welcome to Recipes where people in our community loved. Healthy and Yummy"</p>
+    <p>Just tap for more Information</p>
+
+    <!-- Shopping List -->
+    <div id="shoppingList">
+      <h3>🛒 Shopping List</h3>
+      <ul id="listItems"></ul>
+    </div>
+
+    <div class="recipe-grid" id="recipeGrid">
+      <div class="recipe-card" onclick="openModal('pastaModal')">
+        <img src="C:\Users\User\Desktop\multiplePage\img folder\pasta.jpg" alt="Pasta">
+        <div class="content">
+          <h4>Classic Italian Pasta</h4>
+          <p>Fresh pasta with homemade tomato sauce and basil</p>
+          <small>⏱ 30 min | 👥 4 servings</small>
+        </div>
+      </div>
+
+      <div class="recipe-card" onclick="openModal('saladModal')">
+        <img src="C:\Users\User\Desktop\multiplePage\img folder\avo.jpg" alt="Salad">
+        <div class="content">
+          <h4>Healthy Garden Salad</h4>
+          <p>Crisp greens with grilled chicken and fresh vegetables</p>
+          <small>⏱ 20 min | 👥 2 servings</small>
+        </div>
+      </div>
+
+      <div class="recipe-card" onclick="openModal('cakeModal')">
+        <img src="C:\Users\User\Desktop\multiplePage\img folder\cake.jpg" alt="Cake">
+        <div class="content">
+          <h4>Decadent Chocolate Cake</h4>
+          <p>Rich, moist chocolate cake with velvety frosting</p>
+          <small>⏱ 60 min | 👥 8 servings</small>
+        </div>
+      </div>
+
+      <div class="recipe-card" onclick="openModal('stirFryModal')">
+        <img src="C:\Users\User\Desktop\multiplePage\img folder\veg.jpg" alt="Vegetarian Stir-fry">
+        <div class="content">
+          <h4>Healthy Vegetarian Stir-fry</h4>
+          <p>Colorful veggies with tofu in savory sauce</p>
+          <small>⏱ 25 min | 👥 3 servings</small>
+        </div>
+      </div>
+
+      <div class="recipe-card" onclick="openModal('pancakeModal')">
+        <img src="C:\Users\User\Desktop\multiplePage\img folder\hon.jpg" alt="Pancakes">
+        <div class="content">
+          <h4>Fluffy Pancakes</h4>
+          <p>Light, buttery pancakes with berries and syrup</p>
+          <small>⏱ 15 min | 👥 2 servings</small>
+        </div>
+      </div>
+      
+      
+     <div class="recipe-card" onclick="openModal('carbonaraModal')">
+        <img src="C:\Users\User\Desktop\multiplePage\img folder\pas.jpg" alt="Spaghetti Carbonara">
+        <div class="content">
+          <h4>Spaghetti Carbonara</h4>
+          <p>Creamy pasta with eggs, cheese, pancetta, and pepper</p>
+          <small>⏱ 25 min | 👥 3 servings</small>
+        </div>
+      </div>
+
+      
+      <div class="recipe-card" onclick="openModal('chickenModal')">
+        <img src="C:\Users\User\Desktop\multiplePage\img folder\chicken.jpg" alt="Chicken Curry">
+        <div class="content">
+          <h4>Chicken Curry</h4>
+          <p>Rich, flavorful curry with tender chicken and spices</p>
+          <small>⏱ 40 min | 👥 4 servings</small>
+        </div>
+      </div>
+      
+         <div class="recipe-card" onclick="openModal('sandwichModal')">
+        <img src="C:\Users\User\Desktop\multiplePage\img folder\sand.jpg" alt="Tuna Sandwich">
+        <div class="content">
+          <h4>Tuna Sandwich</h4>
+          <p>Classic tuna sandwich with mayo and lettuce</p>
+          <small>⏱ 10 min | 👥 1 serving</small>
+        </div>
+      </div>
+      
+         <div class="recipe-card" onclick="openModal('smoothieModal')">
+        <img src="C:\Users\User\Desktop\multiplePage\img folder\smoothie.jpg" alt="Smoothie">
+        <div class="content">
+          <h4>Berry Smoothie</h4>
+          <p>Refreshing smoothie with strawberries and yogurt</p>
+          <small>⏱ 5 min | 👥 1 serving</small>
+        </div>
+      </div>
+
+      
+      
+    </div>
+  </section>
+
+
+
+
+
+
+  <!-- === Modals === -->
+
+  <!-- Pasta -->
+  <div id="pastaModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('pastaModal')">&times;</span>
+      <img src="C:\Users\User\Desktop\multiplePage\img folder\pasta.jpg" alt="">
+      <h2>Classic Italian Pasta</h2>
+      <h3>Ingredients</h3>
+      <ul id="pasta-ingredients">
+        <li>200g spaghetti</li>
+        <li>2 cups tomato sauce</li>
+        <li>Fresh basil leaves</li>
+        <li>2 garlic cloves</li>
+        <li>Olive oil</li>
+        <li>Salt & pepper</li>
+      </ul>
+      <h3>Instructions</h3>
+      <ol>
+        <li>Boil pasta in salted water until al dente.</li>
+        <li>Heat olive oil, sauté garlic, and add tomato sauce.</li>
+        <li>Simmer for 10 minutes.</li>
+        <li>Drain pasta and toss with sauce.</li>
+        <li>Top with basil and serve warm.</li>
+      </ol>
+      <button class="add-btn" onclick="addToList('pasta-ingredients')">➕ Add to List</button>
+      <a href="https://www.youtube.com/results?search_query=italian+pasta+recipe" target="_blank">
+        <button class="add-btn">▶ Watch Tutorial</button>
+      </a>
+    </div>
+  </div>
+
+  <!-- Salad -->
+  <div id="saladModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('saladModal')">&times;</span>
+      <img src="C:\Users\User\Desktop\multiplePage\img folder\avo.jpg" alt="">
+      <h2>Healthy Garden Salad</h2>
+      <h3>Ingredients</h3>
+      <ul id="salad-ingredients">
+        <li>Mixed greens</li>
+        <li>2 chicken breasts</li>
+        <li>Cherry tomatoes</li>
+        <li>Avocado</li>
+        <li>Cucumber</li>
+        <li>Red onion</li>
+        <li>Olive oil & lemon dressing</li>
+      </ul>
+      <h3>Instructions</h3>
+      <ol>
+        <li>Grill chicken until cooked through.</li>
+        <li>Chop all veggies and arrange greens.</li>
+        <li>Top with chicken and drizzle dressing.</li>
+      </ol>
+      <button class="add-btn" onclick="addToList('salad-ingredients')">➕ Add to List</button>
+      <a href="https://www.youtube.com/results?search_query=garden+salad+recipe" target="_blank">
+        <button class="add-btn">▶ Watch Tutorial</button>
+      </a>
+    </div>
+  </div>
+
+  <!-- Cake -->
+  <div id="cakeModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('cakeModal')">&times;</span>
+      <img src="C:\Users\User\Desktop\multiplePage\img folder\cake.jpg" alt="">
+      <h2>Decadent Chocolate Cake</h2>
+      <h3>Ingredients</h3>
+      <ul id="cake-ingredients">
+        <li>2 cups flour</li>
+        <li>1 cup sugar</li>
+        <li>1 cup cocoa powder</li>
+        <li>1 tsp baking powder</li>
+        <li>2 eggs</li>
+        <li>1 cup milk</li>
+        <li>1/2 cup butter</li>
+      </ul>
+      <h3>Instructions</h3>
+      <ol>
+        <li>Preheat oven to 180°C (350°F).</li>
+        <li>Mix dry ingredients.</li>
+        <li>Add eggs, milk, and melted butter.</li>
+        <li>Bake for 35–40 minutes.</li>
+      </ol>
+      <button class="add-btn" onclick="addToList('cake-ingredients')">➕ Add to List</button>
+      <a href="https://www.youtube.com/results?search_query=chocolate+cake+recipe" target="_blank">
+        <button class="add-btn">▶ Watch Tutorial</button>
+      </a>
+    </div>
+  </div>
+
+  <!-- Stir Fry -->
+  <div id="stirFryModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('stirFryModal')">&times;</span>
+      <img src="C:\Users\User\Desktop\multiplePage\img folder\veg.jpg" alt="">
+      <h2>Healthy Vegetarian Stir-fry</h2>
+      <h3>Ingredients</h3>
+      <ul id="stirfry-ingredients">
+        <li>Tofu</li>
+        <li>Bell peppers</li>
+        <li>Broccoli</li>
+        <li>Carrots</li>
+        <li>Soy sauce</li>
+        <li>Sesame oil</li>
+        <li>Garlic & ginger</li>
+        <li>Cooked rice</li>
+      </ul>
+      <h3>Instructions</h3>
+      <ol>
+        <li>Fry tofu until golden.</li>
+        <li>Stir-fry veggies in sesame oil.</li>
+        <li>Add tofu and soy sauce.</li>
+      </ol>
+      <button class="add-btn" onclick="addToList('stirfry-ingredients')">➕ Add to List</button>
+       <a href="https://www.youtube.com/results?search_query=chocolate+cake+recipe" target="_blank">
+   <button class="add-btn">▶ Watch Tutorial</button>
+ </a>
+    </div>
+  </div>
+
+  <!-- Pancakes -->
+  <div id="pancakeModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('pancakeModal')">&times;</span>
+      <img src="C:\Users\User\Desktop\multiplePage\img folder\hon.jpg" alt="">
+      <h2>Fluffy Pancakes</h2>
+      <h3>Ingredients</h3>
+      <ul id="pancake-ingredients">
+        <li>2 cups flour</li>
+        <li>2 tbsp sugar</li>
+        <li>2 tsp baking powder</li>
+        <li>½ tsp salt</li>
+        <li>2 eggs</li>
+        <li>1¼ cup milk</li>
+        <li>¼ cup melted butter</li>
+        <li>Fresh berries & syrup</li>
+      </ul>
+      <h3>Instructions</h3>
+      <ol>
+        <li>Mix dry ingredients.</li>
+        <li>Whisk eggs, milk & butter.</li>
+        <li>Combine wet & dry.</li>
+        <li>Cook and serve with syrup.</li>
+      </ol>
+      <button class="add-btn" onclick="addToList('pancake-ingredients')">➕ Add to List</button>
+       <a href="https://www.youtube.com/results?search_query=chocolate+cake+recipe" target="_blank">
+   <button class="add-btn">▶ Watch Tutorial</button>
+ </a>
+    </div>
+  </div> 
+
+  <!-- Carbonara -->
+  <div id="carbonaraModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('carbonaraModal')">&times;</span>
+      <img src="C:\Users\User\Desktop\multiplePage\img folder\pas.jpg" alt="">
+      <h2>Spaghetti Carbonara</h2>
+      <h3>Ingredients</h3>
+      <ul id="carbonara-ingredients">
+        <li>200g spaghetti</li>
+        <li>100g pancetta or bacon</li>
+        <li>2 eggs</li>
+        <li>½ cup grated Parmesan</li>
+        <li>Salt & black pepper to taste</li>
+        <li>1 tbsp olive oil</li>
+      </ul>
+      <h3>Instructions</h3>
+      <ol>
+        <li>Cook pasta until al dente.</li>
+        <li>Fry pancetta until crisp.</li>
+        <li>Whisk eggs with Parmesan, salt, and pepper.</li>
+        <li>Toss hot pasta with pancetta and egg mixture.</li>
+        <li>Serve immediately with extra cheese.</li>
+      </ol>
+      <button class="add-btn" onclick="addToList('carbonara-ingredients')">➕ Add to List</button>
+      <a href="https://www.youtube.com/results?search_query=spaghetti+carbonara+recipe" target="_blank">
+        <button class="add-btn">▶ Watch Tutorial</button>
+      </a>
+    </div>
+  </div>
+
+  
+  
+
+  <!-- Chicken Curry -->
+  <div id="chickenModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('chickenModal')">&times;</span>
+      <img src="C:\Users\User\Desktop\multiplePage\img folder\chicken.jpg" alt="">
+      <h2>Chicken Curry</h2>
+      <h3>Ingredients</h3>
+      <ul id="chicken-ingredients">
+        <li>500g chicken pieces</li>
+        <li>1 onion, chopped</li>
+        <li>2 cloves garlic, minced</li>
+        <li>1 tbsp curry powder</li>
+        <li>1 cup coconut milk</li>
+        <li>1 tbsp oil</li>
+        <li>Salt and pepper to taste</li>
+      </ul>
+      <h3>Instructions</h3>
+      <ol>
+        <li>Sauté onion and garlic until fragrant.</li>
+        <li>Add chicken and cook until browned.</li>
+        <li>Stir in curry powder and coconut milk.</li>
+        <li>Simmer until chicken is tender.</li>
+        <li>Serve with steamed rice.</li>
+      </ol>
+      <button class="add-btn" onclick="addToList('chicken-ingredients')">➕ Add to List</button>
+      <a href="https://www.youtube.com/results?search_query=chicken+curry+recipe" target="_blank">
+        <button class="add-btn">▶ Watch Tutorial</button>
+      </a>
+    </div>
+  </div>
+
+  <!-- Tuna Sandwich -->
+  <div id="sandwichModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('sandwichModal')">&times;</span>
+      <img src="C:\Users\User\Desktop\multiplePage\img folder\sand.jpg" alt="">
+      <h2>Tuna Sandwich</h2>
+      <h3>Ingredients</h3>
+      <ul id="sandwich-ingredients">
+        <li>2 slices bread</li>
+        <li>1 can tuna</li>
+        <li>2 tbsp mayonnaise</li>
+        <li>Lettuce leaves</li>
+        <li>Salt & pepper to taste</li>
+      </ul>
+      <h3>Instructions</h3>
+      <ol>
+        <li>Mix tuna with mayonnaise, salt, and pepper.</li>
+        <li>Spread mixture on bread.</li>
+        <li>Add lettuce and top with second slice.</li>
+        <li>Cut in half and serve fresh.</li>
+      </ol>
+      <button class="add-btn" onclick="addToList('sandwich-ingredients')">➕ Add to List</button>
+      <a href="https://www.youtube.com/results?search_query=tuna+sandwich+recipe" target="_blank">
+        <button class="add-btn">▶ Watch Tutorial</button>
+      </a>
+    </div>
+  </div>
+  
+    <!-- Smoothie -->
+  <div id="smoothieModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('smoothieModal')">&times;</span>
+      <img src="C:\Users\User\Desktop\multiplePage\img folder\smoothie.jpg" alt="">
+      <h2>Berry Smoothie</h2>
+      <h3>Ingredients</h3>
+      <ul id="smoothie-ingredients">
+        <li>1 cup mixed berries</li>
+        <li>½ cup yogurt</li>
+        <li>½ cup milk</li>
+        <li>1 tbsp honey</li>
+        <li>Ice cubes (optional)</li>
+      </ul>
+      <h3>Instructions</h3>
+      <ol>
+        <li>Combine all ingredients in a blender.</li>
+        <li>Blend until smooth and creamy.</li>
+        <li>Pour into a glass and enjoy chilled.</li>
+      </ol>
+      <button class="add-btn" onclick="addToList('smoothie-ingredients')">➕ Add to List</button>
+      <a href="https://www.youtube.com/results?search_query=berry+smoothie+recipe" target="_blank">
+        <button class="add-btn">▶ Watch Tutorial</button>
+      </a>
+    </div>
+  </div>
+
+
+
+
+
+
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-brand">
+        <h2>FlavorTaste</h2>
+        <p>Your destination for delicious recipes and culinary inspiration.</p>
+      </div>
+      <div class="footer-links">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="home.html">Home</a></li>
+          <li><a href="Recipes.html">Recipes</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="subscribe.html">Subscribe</a></li>
+          <li><a href="about-contact.html">A-Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-account">
+        <h3>Account</h3>
+        <ul>
+          <li><a href="LR.html">Login</a></li>
+          <li><a href="LR.html">Register</a></li>
+        </ul>
+      </div>
+      <div class="footer-connect">
+        <h3>Connect</h3>
+        <a href="https://github.com/jai06qui"><i class="fa fa-github"></i> GitHub</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 FlavorTaste. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- JS -->
+  <script>
+    const searchInput = document.getElementById("searchInput");
+    const searchBtn = document.getElementById("searchBtn");
+    const recipes = document.querySelectorAll(".recipe-card");
+
+    function filterRecipes() {
+      const input = searchInput.value.toLowerCase();
+      recipes.forEach(recipe => {
+        const title = recipe.querySelector("h4").innerText.toLowerCase();
+        const desc = recipe.querySelector("p").innerText.toLowerCase();
+        recipe.style.display = (title.includes(input) || desc.includes(input)) ? "block" : "none";
+      });
+    }
+    searchInput.addEventListener("keyup", filterRecipes);
+    searchBtn.addEventListener("click", filterRecipes);
+    
+
+    function openModal(id) { document.getElementById(id).style.display = "block"; }
+    function closeModal(id) { document.getElementById(id).style.display = "none"; }
+    window.onclick = e => document.querySelectorAll(".modal").forEach(m => { if (e.target == m) m.style.display = "none"; });
+
+    function addToList(ulId) {
+      const ingredients = document.getElementById(ulId).querySelectorAll("li");
+      const list = document.getElementById("listItems");
+      ingredients.forEach(item => {
+        const text = item.textContent;
+        const exists = Array.from(list.children).some(li => li.querySelector("span")?.textContent === text);
+        if (!exists) {
+          const li = document.createElement("li");
+          const span = document.createElement("span");
+          span.textContent = text;
+          const removeBtn = document.createElement("button");
+          removeBtn.textContent = "❌";
+          removeBtn.onclick = () => li.remove();
+          li.appendChild(span);
+          li.appendChild(removeBtn);
+          list.appendChild(li);
+        }
+      });
+      alert("Ingredients added to your shopping list!");
+    }
+  </script>
+</body>
+</html>
