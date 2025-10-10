@@ -165,6 +165,7 @@ nav a:hover {
   width: 300px;
   text-align: left;
   transition: transform 0.3s ease;
+  margin: 0 auto;
 }
 .recipe-card img {
   width: 100%;
@@ -1053,6 +1054,7 @@ a, button, .btn, .add-btn {
     text-align: left;
   }
 }
+
 
 
 
