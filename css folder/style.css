@@ -141,18 +141,20 @@ nav a:hover {
 
 /* == Recipes ==== */
 .recipes {
-  padding: 40px 20px;
+  padding: 40px 0px;
   text-align: center;
 }
 .recipes h2 {
      margin-bottom: 20px; 
     }
 .recipe-grid {
-  display: grid;
+  display: flex;
   justify-content: center;
   grid-template-columns: repeat(3,3fr);
   gap: 20px;
   flex-wrap: wrap;
+  margin: 0 auto;
+  max-width: 1000px;
 }
 .recipe-card {
   background: #fff;
@@ -162,6 +164,7 @@ nav a:hover {
   box-shadow: 0 2px 6px rgba(0,0,0,0.1);
   width: 300px;
   text-align: left;
+  transition: transform 0.3s ease;
 }
 .recipe-card img {
   width: 100%;
@@ -1050,6 +1053,7 @@ a, button, .btn, .add-btn {
     text-align: left;
   }
 }
+
 
 
 
